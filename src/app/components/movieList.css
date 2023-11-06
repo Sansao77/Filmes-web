@@ -1,0 +1,25 @@
+ul {
+  max-width: 800px;
+}
+
+.filme {
+  text-align: left;
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.filme h2 {
+  font-size: 3rem;
+}
+
+.filme p {
+  font-size: 1.8rem;
+}
+
+.filme img {
+  max-width: 800px;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
