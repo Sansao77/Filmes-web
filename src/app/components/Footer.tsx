@@ -1,17 +1,18 @@
-import "./footer.css";
+import styles from "./footer.module.css";
 import { AiFillGithub, AiFillPlayCircle } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="footer-content">
-        <div className="footer-logo">
+    <footer className={styles.footer}>
+      <div className={styles.footer_content}>
+        <div className={styles.footer_logo}>
           <AiFillPlayCircle />
           <h2>CineLista</h2>
         </div>
 
-        <div className="footer-links">
+        <div className={styles.footer_links}>
           <ul>
+            {/* <span>Desenvolvido por:</span> */}
             <li>
               <a href="https://github.com/GabPSant" target="_blank">
                 <AiFillGithub />
@@ -40,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className={styles.footer_bottom}>
         <p>&copy; 2023 CineLista. Todos os direitos reservados.</p>
       </div>
     </footer>
