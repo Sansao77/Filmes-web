@@ -6,8 +6,15 @@ import bastardosInglo from "../../public/bastardos-inglorios.png";
 import larajaMec from "../../public/laranja-mecanica.jpg";
 import interestelar from "../../public/interestellar.jpg";
 import vForVen from "../../public/vforvendetta.jpg";
+import { StaticImageData } from "next/image";
 
-export const filmes = [
+type Filmes = {
+  titulo: string;
+  imagemFilme: StaticImageData;
+  descricao: Array<string>;
+};
+
+export const filmes: Filmes[] = [
   {
     titulo: "Para todos os garotos: Agora e para sempre",
     imagemFilme: parasempre,

@@ -4,23 +4,23 @@ import { filmes } from "../dadosFilmes";
 import "./movieList.css";
 
 export default function MovieList() {
-  return (
-    <ul>
-      {filmes.map(({ titulo, imagemFilme, descricao }) => (
-        <Movie key={titulo} titulo={titulo} imagemFilme={imagemFilme}>
-          {descricao.map((paragrafo) => (
-            <p key={paragrafo}>{paragrafo}</p>
-          ))}
-        </Movie>
-      ))}
-    </ul>
+  const movieList = filmes.map(
+    ({ titulo, imagemFilme, descricao }, idMovie) => (
+      <Movie key={idMovie} titulo={titulo} imagemFilme={imagemFilme}>
+        {descricao.map((paragrafo, idP) => (
+          <p key={idP}>{paragrafo}</p>
+        ))}
+      </Movie>
+    )
   );
+
+  return <ul>{movieList}</ul>;
 }
 
 interface MovieProps {
   titulo: string;
   children: ReactNode;
-  imagemFilme: string | StaticImageData;
+  imagemFilme: StaticImageData;
 }
 
 function Movie({ titulo, imagemFilme, children }: MovieProps) {
