@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  background-color: black;
+  background-color: #1a202c;
   color: white;
   align-items: center;
   width: 100%;
@@ -16,18 +16,18 @@ div h2 {
 
 div div {
   font-size: large;
-  /* width: 50rem; */
-  margin: 0.5rem;
+  /*  width: 77rem; */
+  margin: 1.5rem 0 2.4rem;
   text-align: justify;
 }
 
 .botaoMenu {
   align-items: center;
   margin: 1rem 0 0;
-  background-color: black;
-  border: 1px solid white;
+  background-color: #1a202c;
+  border: 1px solid rgb(183, 168, 168);
   color: white;
-  width: 4rem;
+  width: 5rem;
   height: 3rem;
   border-radius: 10%;
 }

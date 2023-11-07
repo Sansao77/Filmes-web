@@ -1,19 +1,25 @@
+"use client"
+
 import "./header.css";
 import Image from "next/image";
 import filmes from "../../../public/filmes.jpg";
+import Menu from './Menu';
+import { useState } from 'react';
 
 // 1º valor: largura, 2º valor: altura;
 export const tamanhoPadrao = [800, 480];
 
 // Só poder existir um default por arquivo tsx
 export default function Header() {
+  const [estaAberto, mostrarMenu] = useState(false);
   return (
     <header>
       <h1 id="titulo">Lista de Filmes</h1>
 
-      <button type="button" className="botaoMenu">
+      <button type="button" className="botaoMenu" onClick={() =>{mostrarMenu(!estaAberto)}}>
         <h3>Menu</h3>
       </button>
+      {estaAberto && <Menu active = {mostrarMenu}/>}
     </header>
   );
 }

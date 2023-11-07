@@ -1,3 +1,6 @@
+import Image, { StaticImageData } from "next/image";
+import { Conteudo } from "./styles";
+import { ReactNode } from "react";
 import { filmes } from "../dadosFilmes";
 import styles from "./movieList.module.css";
 import Movie from "./Movie";

@@ -1,5 +1,8 @@
+"use client";
 import Footer from "./components/Footer";
+
 import Header from "./components/Header";
+import Menu from "./components/Menu";
 import { Introducao } from "./components/Header";
 import MovieList from "./components/MovieList";
 
