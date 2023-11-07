@@ -1,48 +1,57 @@
-/* Estilos para o footer */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  padding: 2rem;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 0 20px;
 }
 
-.footer-logo h1 {
-  font-size: 24px;
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 3rem;
+}
+
+.footer-logo h2 {
+  font-size: 2.4rem;
 }
 
 .footer-links ul {
-  list-style: none;
   display: flex;
-}
-
-.footer-links li {
-  margin-right: 20px;
+  gap: 1.4rem;
 }
 
 .footer-links a {
+  display: flex;
+  align-items: center;
   color: #fff;
+  font-size: 1.6rem;
   text-decoration: none;
+
+  transition: all 0.2s;
 }
 
-.footer-social a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 10px;
+.footer-links a:hover {
+  color: #ddd;
 }
 
 .footer-bottom {
+  font-style: italic;
+  margin-top: 2rem;
+  font-size: 1.4rem;
   text-align: center;
   padding: 10px 0;
 }
 
-/* Estilos para ícones de redes sociais (font-awesome) */
-.fab {
-  font-size: 24px;
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

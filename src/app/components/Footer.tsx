@@ -1,42 +1,47 @@
 import "./footer.css";
+import { AiFillGithub, AiFillPlayCircle } from "react-icons/ai";
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
         <div className="footer-logo">
-          <h1>Meu Site</h1>
+          <AiFillPlayCircle />
+          <h2>CineLista</h2>
         </div>
+
         <div className="footer-links">
           <ul>
             <li>
-              <a href="/">Gabriel P.Santos</a>
+              <a href="https://github.com/GabPSant" target="_blank">
+                <AiFillGithub />
+                Gabriel P.Santos
+              </a>
             </li>
             <li>
-              <a href="/sobre">Giselle Jacinto</a>
+              <a href="https://github.com/Giselle-Jacinto" target="_blank">
+                <AiFillGithub />
+                Giselle Jacinto
+              </a>
             </li>
             <li>
-              <a href="/contato">Mariene Cruz</a>
+              <a href="https://github.com/MariCruz31" target="_blank">
+                <AiFillGithub />
+                Mariene Cruz
+              </a>
             </li>
             <li>
-              <a href="/contato">Thallysson Silva</a>
+              <a href="https://github.com/sthallysson" target="_blank">
+                <AiFillGithub />
+                Thallysson Silva
+              </a>
             </li>
           </ul>
         </div>
-        <div className="footer-social">
-          <a href="#">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </div>
       </div>
+
       <div className="footer-bottom">
-        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2023 CineLista. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
