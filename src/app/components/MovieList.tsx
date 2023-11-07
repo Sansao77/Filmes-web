@@ -1,7 +1,6 @@
-import Image, { StaticImageData } from "next/image";
-import { ReactNode } from "react";
 import { filmes } from "../dadosFilmes";
-import "./movieList.css";
+import styles from "./movieList.module.css";
+import Movie from "./Movie";
 
 export default function MovieList() {
   const movieList = filmes.map(
@@ -14,21 +13,5 @@ export default function MovieList() {
     )
   );
 
-  return <ul>{movieList}</ul>;
-}
-
-interface MovieProps {
-  titulo: string;
-  children: ReactNode;
-  imagemFilme: StaticImageData;
-}
-
-function Movie({ titulo, imagemFilme, children }: MovieProps) {
-  return (
-    <li className="filme">
-      <h2 id={titulo}>{titulo}</h2>
-      <Image src={imagemFilme} alt="" />
-      {children}
-    </li>
-  );
+  return <ul className={styles.movieList_container}>{movieList}</ul>;
 }
