@@ -1,23 +1,26 @@
-/*import { useState } from 'react';
+import { SetStateAction, Dispatch} from 'react';
+import {Container, ListaItem} from './styles';
 import {filmes} from '../dadosFilmes';
 import './menu.css'
 
 
-export default function Menu () {
-  const [estaAberto, setEstaAberto] = useState(false);
+export default function Menu ({active}:{active: Dispatch<SetStateAction<boolean>>}) {
+
+  const fecharMenu = () =>{
+    active(false);
+  }
   const filmesLista = filmes.map((filme,indice) =>{
     const texto = `#${filme.titulo}`;
     return (
-      <a key= {indice} href={texto}>
+      <ListaItem key= {indice} href={texto}>
         {filme.titulo};
-      </a>
+      </ListaItem>
     );
   });
 
   return(
-      <aside>
+      <Container>
         {filmesLista}
-      </aside>
+      </Container>
     );
 }
- */

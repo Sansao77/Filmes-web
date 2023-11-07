@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import {Conteudo} from './styles'
 import { ReactNode } from "react";
 import { filmes } from "../dadosFilmes";
 import "./movieList.css";
@@ -25,10 +26,10 @@ interface MovieProps {
 
 function Movie({ titulo, imagemFilme, children }: MovieProps) {
   return (
-    <li className="filme">
+    <Conteudo className="filme">
       <h2 id={titulo}>{titulo}</h2>
-      <Image src={imagemFilme} alt="" />
+      <Image src={imagemFilme} alt=""/>
       {children}
-    </li>
+    </Conteudo>
   );
 }

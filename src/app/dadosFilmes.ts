@@ -31,7 +31,7 @@ export const filmes = [
     ],
   },
   {
-    titulo: "Contaminação: A Verdade Sobre o que Comemo",
+    titulo: "Contaminação: A Verdade Sobre o que Comemos",
     imagemFilme: poisoned,
     descricao: [
       "Lara está prestes a começar uma nova fase de sua vida após a formatura. Em meio a duas viagens marcantes, ela vai reavaliar como poderão ficar suas relações familiares, a ligação com os amigos e o vínculo com seu namorado",
