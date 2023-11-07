@@ -1,34 +1,17 @@
-import Image, { StaticImageData } from "next/image";
-import { ReactNode } from "react";
 import { filmes } from "../dadosFilmes";
-import "./movieList.css";
+import styles from "./movieList.module.css";
+import Movie from "./Movie";
 
 export default function MovieList() {
-  return (
-    <ul>
-      {filmes.map(({ titulo, imagemFilme, descricao }) => (
-        <Movie key={titulo} titulo={titulo} imagemFilme={imagemFilme}>
-          {descricao.map((paragrafo) => (
-            <p key={paragrafo}>{paragrafo}</p>
-          ))}
-        </Movie>
-      ))}
-    </ul>
+  const movieList = filmes.map(
+    ({ titulo, imagemFilme, descricao }, idMovie) => (
+      <Movie key={idMovie} titulo={titulo} imagemFilme={imagemFilme}>
+        {descricao.map((paragrafo, idP) => (
+          <p key={idP}>{paragrafo}</p>
+        ))}
+      </Movie>
+    )
   );
-}
 
-interface MovieProps {
-  titulo: string;
-  children: ReactNode;
-  imagemFilme: string | StaticImageData;
-}
-
-function Movie({ titulo, imagemFilme, children }: MovieProps) {
-  return (
-    <li className="filme">
-      <h2 id={titulo}>{titulo}</h2>
-      <Image src={imagemFilme} alt="" />
-      {children}
-    </li>
-  );
+  return <ul className={styles.movieList_container}>{movieList}</ul>;
 }
