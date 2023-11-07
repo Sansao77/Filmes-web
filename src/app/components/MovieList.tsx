@@ -6,8 +6,8 @@ import "./movieList.css";
 export default function MovieList() {
   return (
     <ul>
-      {filmes.map(({ titulo, imagemFilme, descricao }) => (
-        <Movie key={titulo} titulo={titulo} imagemFilme={imagemFilme}>
+      {filmes.map(({ titulo, imagemFilme, descricao }, indice) => (
+        <Movie key= {indice} titulo={titulo} imagemFilme={imagemFilme}>
           {descricao.map((paragrafo) => (
             <p key={paragrafo}>{paragrafo}</p>
           ))}
