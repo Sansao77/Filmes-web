@@ -1,22 +1,21 @@
-header {
+.header {
   text-align: center;
   background-color: #1a202c;
   color: white;
   align-items: center;
   width: 100%;
-  height: 7rem;
-  padding: 0.3rem;
-  position: fixed;
+  padding: 2rem;
 }
 
-div h2 {
+.subtitle {
   font-size: 3.5rem;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-div div {
+.container {
   font-size: large;
-  /*  width: 77rem; */
   margin: 1.5rem 0 2.4rem;
   text-align: justify;
 }
@@ -30,4 +29,26 @@ div div {
   width: 5rem;
   height: 3rem;
   border-radius: 10%;
+}
+
+.banner_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descricao {
+  max-width: 80rem;
+}
+
+.img_container {
+  max-width: 80rem;
+  margin-bottom: 1rem;
 }
