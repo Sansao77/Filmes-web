@@ -6,8 +6,7 @@ Página web contendo uma lista de filmes, criada usando React
 
 ![App Screenshot](./public/screen2.png)
 
-![App Screenshot](./public/mobilescreen2.png)
-
+<img src="./public/mobilescreen2.png" width="50%"/>
 
 ## 🚀Tecnologias
 
