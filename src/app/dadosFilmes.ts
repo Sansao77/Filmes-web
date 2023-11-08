@@ -33,8 +33,7 @@ export const filmes: Filmes[] = [
     titulo: "CIBERNÉTICAS",
     imagemFilme: cibernetica,
     descricao: [
-      "Lara está prestes a começar uma nova fase de sua vida após a formatura. Em meio a duas viagens marcantes, ela vai reavaliar como poderão ficar suas relações familiares, a ligação com os amigos e o vínculo com seu namorado",
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos vitae qui eos itaque tenetur ducimus dolores dolorem sunt ipsa? Delectus, id illo similique temporibus quia praesentium. Quaerat, perferendis? Incidunt, necessitatibus!",
+      "CIBERNÉTICAS apresenta os percursos traçados por mulheres poderosas que fazem hoje – e fizeram no passado – o mundo ficar mais humano e menos desigual por meio da inovação tecnológica. Uma reflexão sobre a presença das mulheres no ecossistema que controla modelos de vida no mundo contemporâneo.",
     ],
   },
   {

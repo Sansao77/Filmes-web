@@ -1,6 +1,9 @@
-import { filmes } from "../dadosFilmes";
+import Image, { StaticImageData } from "next/image";
+import { Conteudo } from "../Menu/styles";
+import { ReactNode } from "react";
+import { filmes } from "../../dadosFilmes";
 import styles from "./movieList.module.css";
-import Movie from "./Movie";
+import Movie from "../Movie/Movie";
 
 export default function MovieList() {
   const movieList = filmes.map(
