@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# ▶CineLista
 
-First, run the development server:
+Página web contendo uma lista de filmes, criada usando React
+## 📸Screenshots
+
+![App Screenshot](./public/screen2.png)
+
+![App Screenshot](./public/mobilescreen2.png)
+
+
+## 🚀Tecnologias
+
+- NextJS
+- ReactJS
+- Typescript
+- HTML e CSS
+- CSS Modules
+- Styled Compnents
+
+
+
+
+## ℹ️ Rodando localmente
+
+Clone o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/GabPSant/Filmes-web.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Entre no diretório do projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd Filmes-web
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Instale as dependências
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Inicie o servidor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🌐Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://filmes-web-one.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ➡️Autores
+
+- [@GabPSant](https://www.github.com/GabPSant)
+- [@MariCruz31](https://www.github.com/MariCruz31)
+- [@Giselle-Jacinto](https://www.github.com/Giselle-Jacinto)
+- [@sthallysson](https://www.github.com/sthallysson)
+
