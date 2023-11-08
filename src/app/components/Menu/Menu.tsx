@@ -1,5 +1,5 @@
 import { SetStateAction, Dispatch } from "react";
-import { Container, ListaItem } from "./styles";
+import { Container, ListaItem, ListaBotao } from "./styles";
 import { filmes } from "../../dadosFilmes";
 import "./menu.css";
 
@@ -22,6 +22,7 @@ export default function Menu({
 
   return (
     <Container>
+      <ListaBotao onClick={() =>{active(false)}}>X</ListaBotao>
       <ListaItem href="#titulo">Inicio</ListaItem>
       {filmesLista}
     </Container>

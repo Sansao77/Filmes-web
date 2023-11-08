@@ -14,6 +14,7 @@ export default function Header() {
   const [estaAberto, mostrarMenu] = useState(false);
 
   return (
+    <>
     <header className={styles.header}>
       <h1 id="titulo" className={styles.title}>
         <AiFillPlayCircle />
@@ -29,8 +30,10 @@ export default function Header() {
       >
         <h3>Menu</h3>
       </button>
-      {estaAberto && <Menu active={mostrarMenu} />}
     </header>
+    
+    {estaAberto && <Menu active={mostrarMenu} />}
+    </>
   );
 }
 

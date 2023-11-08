@@ -3,23 +3,15 @@ import styled from 'styled-components'
 export const Container = styled.aside`
     background-color: #171923;
     position: fixed;
+    scroll-behavior: auto;
     height: 100%;
     top: 0px;
     left: 0px;
-    width: 300px;
+    width: 29rem;
     left: ${props => props ? '0' : '-100%'};
+    overflow-y: scroll;
     animation: mostrarMenu .4s;
     /animation: esconderMenu .4s;/
-
-> svg {
-    position: fixed;
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-top: 32px;
-    margin-left: 32px;
-    cursor: pointer;
-    }
 
     @keyframes mostrarMenu {
         from {
@@ -31,17 +23,6 @@ export const Container = styled.aside`
             width: 300px;
         }
     }
-
-    /*@keyframes esconderMenu{
-        from{
-            opacity: 1;
-            width: 300px;
-        }
-        to{
-            opacity: 0;
-            width: 0;
-        }
-    }*/
 ;`
 
 export const Conteudo = styled.li`
@@ -76,11 +57,24 @@ export const ListaItem = styled.a`
     border-radius: 10px;
     margin: 0 15px 20px;
 
-> svg {
-        margin: 0 20px;
-    }
-
     &:hover {
         background-color: black;
     }
 ;`
+
+export const ListaBotao = styled.button`
+    display: flex;
+    align-self: end;
+    background-color: #1A202C;
+    width: min-content;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 15px 20px;
+
+    &:hover {
+        background-color: black;
+    }
+`
