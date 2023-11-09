@@ -8,7 +8,8 @@ import interestelar from "../../public/interestellar.jpg";
 import vForVen from "../../public/vforvendetta.jpg";
 import { StaticImageData } from "next/image";
 
-type Filmes = {
+export type Filmes = {
+  id: string;
   titulo: string;
   imagemFilme: StaticImageData;
   descricao: Array<string>;
@@ -16,6 +17,7 @@ type Filmes = {
 
 export const filmes: Filmes[] = [
   {
+    id: crypto.randomUUID(),
     titulo: "Para todos os garotos: Agora e para sempre",
     imagemFilme: parasempre,
     descricao: [
@@ -23,6 +25,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "Um Lugar Chamado Notting Hill.",
     imagemFilme: nottingHill,
     descricao: [
@@ -30,6 +33,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "CIBERNÉTICAS",
     imagemFilme: cibernetica,
     descricao: [
@@ -37,6 +41,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "Contaminação: A Verdade Sobre o que Comemos",
     imagemFilme: poisoned,
     descricao: [
@@ -46,6 +51,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "Bastardos Inglórios",
     imagemFilme: bastardosInglo,
     descricao: [
@@ -55,6 +61,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "Interestelar",
     imagemFilme: interestelar,
     descricao: [
@@ -64,6 +71,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "V de Vingança",
     imagemFilme: vForVen,
     descricao: [
@@ -73,6 +81,7 @@ export const filmes: Filmes[] = [
     ],
   },
   {
+    id: crypto.randomUUID(),
     titulo: "Laranja Mecânica",
     imagemFilme: larajaMec,
     descricao: [
