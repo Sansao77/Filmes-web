@@ -53,7 +53,7 @@ https://filmes-web-one.vercel.app/
 
 ## ➡️Autores
 
-- [@GabPSant](https://www.github.com/GabPSant)
+- [@Sansao77](https://www.github.com/Sansao77)
 - [@MariCruz31](https://www.github.com/MariCruz31)
 - [@Giselle-Jacinto](https://www.github.com/Giselle-Jacinto)
 - [@sthallysson](https://www.github.com/sthallysson)
